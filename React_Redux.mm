@@ -117,12 +117,29 @@
 </node>
 <node TEXT="Redux" LOCALIZED_STYLE_REF="AutomaticLayout.level,1" POSITION="right" ID="ID_1151240137" CREATED="1456070821259" MODIFIED="1459925283773" VSHIFT="36">
 <edge COLOR="#916cbf"/>
-<node TEXT="react-redux" LOCALIZED_STYLE_REF="AutomaticLayout.level,2" FOLDED="true" ID="ID_511004610" CREATED="1456072290486" MODIFIED="1456072972311" VSHIFT="-12">
+<node TEXT="react-redux" LOCALIZED_STYLE_REF="AutomaticLayout.level,2" ID="ID_511004610" CREATED="1456072290486" MODIFIED="1456072972311" VSHIFT="-12">
 <font NAME="Ubuntu" ITALIC="false"/>
 <node TEXT="the glue between React and Redux" ID="ID_318892531" CREATED="1456072294262" MODIFIED="1456072304153"/>
 <node TEXT="helps promoting a component as container" ID="ID_489733211" CREATED="1456072310143" MODIFIED="1456072324328"/>
-<node TEXT="&quot;connect&quot; takes a function and a component to produce a container" FOLDED="true" ID="ID_1461047744" CREATED="1456078238098" MODIFIED="1456078262700">
-<node TEXT="ex: connect(mapStateToProps)(BookList)" STYLE_REF="Monospace" ID="ID_108800249" CREATED="1456078263210" MODIFIED="1459925557210"/>
+<node TEXT="items" ID="ID_1735977113" CREATED="1465560588764" MODIFIED="1465560590579">
+<node TEXT="Provider component" ID="ID_484993030" CREATED="1465560592542" MODIFIED="1465560602854">
+<node TEXT="attaches the application to Redux store" ID="ID_118320590" CREATED="1465560620523" MODIFIED="1465560629230"/>
+<node TEXT="makes store available to all the container comps&#xa;through the use of React&apos;s context" ID="ID_846097497" CREATED="1465560634519" MODIFIED="1465560677433"/>
+</node>
+<node TEXT="connect function" ID="ID_1504759026" CREATED="1465560603297" MODIFIED="1465560607509">
+<node TEXT="&quot;connect&quot; takes a function and a component to produce a container" ID="ID_1461047744" CREATED="1456078238098" MODIFIED="1456078262700">
+<node TEXT="ex: connect( mapStateToProps, mapDispatchToProps ) (MyComp)" STYLE_REF="Monospaced" ID="ID_108800249" CREATED="1456078263210" MODIFIED="1465564814688"/>
+</node>
+<node TEXT="wraps the component so that it is connected to Redux store" ID="ID_633196486" CREATED="1465560694065" MODIFIED="1465560728969"/>
+<node TEXT="args" ID="ID_1480180482" CREATED="1465564530539" MODIFIED="1465564714152">
+<node TEXT="mapStateToProps" ID="ID_1633811174" CREATED="1465564715241" MODIFIED="1465564719768">
+<node TEXT="specifies the state to be exposed to the component as props" ID="ID_582954445" CREATED="1465564729061" MODIFIED="1465565098936"/>
+</node>
+<node TEXT="mapDispatchToProps" ID="ID_1573708727" CREATED="1465564720185" MODIFIED="1465564727896">
+<node TEXT="specifies the actions to be exposed to the component as props" ID="ID_739654947" CREATED="1465564767170" MODIFIED="1465565106795"/>
+</node>
+</node>
+</node>
 </node>
 </node>
 <node TEXT="redux-promise Middleware" LOCALIZED_STYLE_REF="AutomaticLayout.level,2" FOLDED="true" ID="ID_414099792" CREATED="1456272724291" MODIFIED="1459925283772">
