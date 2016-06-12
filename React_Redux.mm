@@ -86,9 +86,12 @@
 </node>
 </node>
 <node TEXT="autobinding" LOCALIZED_STYLE_REF="AutomaticLayout.level,4" ID="ID_935524247" CREATED="1464901017988" MODIFIED="1464901048506">
-<node TEXT="not built-in feature as in React.createClass()" ID="ID_1627819363" CREATED="1464901053973" MODIFIED="1464901093205"/>
-<node TEXT="easily accomplished using property initializer" FOLDED="true" ID="ID_1562844240" CREATED="1464901108278" MODIFIED="1464901133590">
+<node TEXT="is not a built-in feature as in React.createClass() case" ID="ID_1627819363" CREATED="1464901053973" MODIFIED="1465566733228"/>
+<node TEXT="easily accomplished using ES7&apos;s property initializer" ID="ID_1562844240" CREATED="1464901108278" MODIFIED="1465566776798">
 <node TEXT="class Counter extends React.Component {&#xa;&#xa;  tick = () =&gt; { ... }&#xa;&#xa;}" STYLE_REF="Monospaced" ID="ID_619683575" CREATED="1464901138112" MODIFIED="1464901196202"/>
+</node>
+<node TEXT="or in constructor()&#xa;but not in render()!" ID="ID_1677241591" CREATED="1465567268843" MODIFIED="1465567395765">
+<node TEXT="constructor() {&#xa;    this.myFunc = this.myFunc.bind(this);&#xa;}" STYLE_REF="Monospaced" ID="ID_439881488" CREATED="1465567312710" MODIFIED="1465567371218"/>
 </node>
 </node>
 </node>
@@ -146,10 +149,10 @@
 <node TEXT="get the Action returned by an Action Creater" ID="ID_1165426539" CREATED="1456272732988" MODIFIED="1456272757461"/>
 <node TEXT="it can change the Action and stop passing through" ID="ID_1972046353" CREATED="1456272758349" MODIFIED="1456272964376"/>
 </node>
-<node TEXT="elements" LOCALIZED_STYLE_REF="AutomaticLayout.level,2" FOLDED="true" ID="ID_1601798092" CREATED="1459925238287" MODIFIED="1459925903948" VSHIFT="20">
+<node TEXT="elements" LOCALIZED_STYLE_REF="AutomaticLayout.level,2" ID="ID_1601798092" CREATED="1459925238287" MODIFIED="1459925903948" VSHIFT="20">
 <node TEXT="Reducer" LOCALIZED_STYLE_REF="AutomaticLayout.level,3" ID="ID_418320636" CREATED="1456070867805" MODIFIED="1459925326356" VSHIFT="12">
-<node TEXT="is a function that returns a piece of the application state" ID="ID_911335112" CREATED="1456070879749" MODIFIED="1456070938221"/>
-<node TEXT="may change the state based on an Action" ID="ID_1978282910" CREATED="1459925851011" MODIFIED="1459925863346"/>
+<node TEXT="is a function that takes a state and an action and it returns a new state" ID="ID_911335112" CREATED="1456070879749" MODIFIED="1465567821481"/>
+<node TEXT="..." ID="ID_1978282910" CREATED="1459925851011" MODIFIED="1465567828122"/>
 </node>
 <node TEXT="Container" LOCALIZED_STYLE_REF="AutomaticLayout.level,3" ID="ID_1112805424" CREATED="1456072332629" MODIFIED="1459925331643" VSHIFT="12">
 <node TEXT="is a React component that has a direct connection&#xa;to the state managed by Redux" ID="ID_813299059" CREATED="1456073250453" MODIFIED="1456073339960"/>
@@ -169,17 +172,6 @@
 <node TEXT="Action" LOCALIZED_STYLE_REF="AutomaticLayout.level,3" ID="ID_1256377553" CREATED="1459925888091" MODIFIED="1464897832002" VSHIFT="20">
 <node TEXT="is a plain object that describes the change of data in the state" ID="ID_1424381500" CREATED="1459925911300" MODIFIED="1459925950047"/>
 <node TEXT="has a type property" ID="ID_1115213664" CREATED="1459926037605" MODIFIED="1459926064053"/>
-</node>
-</node>
-</node>
-<node TEXT="ES 7" LOCALIZED_STYLE_REF="AutomaticLayout.level,1" POSITION="left" ID="ID_1205212008" CREATED="1464898889166" MODIFIED="1464899511119" VSHIFT="30">
-<edge COLOR="#7c007c"/>
-<node TEXT="ES7 property initializers" LOCALIZED_STYLE_REF="AutomaticLayout.level,2" ID="ID_242508538" CREATED="1464898910624" MODIFIED="1464898950963">
-<node TEXT="for Default Props and Prop Types" LOCALIZED_STYLE_REF="AutomaticLayout.level,3" FOLDED="true" ID="ID_253087934" CREATED="1464898930800" MODIFIED="1464898956197">
-<node TEXT="export default class CartItem extends React.Component {&#xa;&#xa;    static propTypes = {&#xa;        title: React.PropTypes.string.isRequired&#xa;    };&#xa;&#xa;    static defaultProps = {&#xa;        title: &apos;Undefined Product&apos;&#xa;    };&#xa;  &#xa;}" STYLE_REF="Monospaced" ID="ID_798876711" CREATED="1464899041321" MODIFIED="1464899729439"/>
-</node>
-<node TEXT="for Initial State" LOCALIZED_STYLE_REF="AutomaticLayout.level,3" FOLDED="true" ID="ID_1711091856" CREATED="1464899162047" MODIFIED="1464899665516">
-<node TEXT="export default class CartItem extends React.Component {&#xa; &#xa;    state = {&#xa;        qty: this.props.initialQty,&#xa;        total: 0&#xa;    };" STYLE_REF="Monospaced" ID="ID_1404770797" CREATED="1464899681646" MODIFIED="1464899710287"/>
 </node>
 </node>
 </node>
